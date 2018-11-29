@@ -44,3 +44,46 @@ console.log(card1);
 
 console.log("value" in card1);
 console.log("rank" in card2);
+
+var p = {x: 1.0, y: 2.5};
+
+var circle = {
+    center: {x: 1.0, y: 2.0},
+    radius: 2.5
+};
+
+console.log(p);
+console.log(circle);
+
+var person = {
+    name: "슈퍼맨",
+    age: 18,
+    sex: "남",
+    married: false
+};
+
+var a = card1;
+
+console.log(a.suit);
+console.log(a === card1);
+
+function square(x) {
+    return x * x;
+}
+
+console.log(square(3));
+
+function dist(p, q) {
+    var dx = q.x - p.x;
+    var dy = q.y - p.y;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+var p1 = {x: 1, y: 1};
+var p2 = {x: 4, y: 5};
+var d = dist(p1, p2);
+console.log(d);
+
+var bark = function() {console.log("bow bow!");};
+bark();
+
