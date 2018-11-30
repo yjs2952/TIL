@@ -87,3 +87,22 @@ console.log(d);
 var bark = function() {console.log("bow bow!");};
 bark();
 
+
+function f(){
+    console.log(k);
+    var k = "local";
+    console.log(k);
+    return k;
+}
+
+f();
+
+let x = "outer x";
+{
+    let x = "inner x";
+    let y = "inner y";
+    console.log(x);
+    console.log(y);
+}
+console.log(x);
+console.log(y);
