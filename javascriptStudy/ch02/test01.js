@@ -91,3 +91,25 @@ console.log(f.length);
 f.length = 1;
 console.log(f);
 
+var a = 0.16;
+var b = 0.2;
+
+console.log(a / b);
+console.log(a / b == 0.8);
+console.log(Math.abs(a / b - 0.8) < 1e-10);
+
+var p = null;
+console.log(p && p.name);
+p = {name: "Tom", age: 18};
+console.log(p && p.name);
+
+var a = [1, 2, 3];
+console.log("배열", a, "의 길이는 ", a.length, "입니다.");
+
+var name = "Tom";
+var height = 172.3;
+console.log("그의 이름은 %s 이며 키는 %fcm 입니다.", name, height);
+
+console.time("answer_time");
+alert("확인 버튼을 눌러라");
+console.timeEnd("answer_time");
