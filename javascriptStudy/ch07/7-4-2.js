@@ -1,0 +1,9 @@
+var a = [2, 4, 6, 8, 10];
+var b = [1, 3, 5, 6, 9, 11];
+loop: for (var i = 0; i < a.length; i++) {
+    for (var j = 0; j < b.length; j++) {
+        if (a[i] == b[j]) break loop;
+    }
+}
+
+console.log(`a[${i}] = b[${j}]`);
