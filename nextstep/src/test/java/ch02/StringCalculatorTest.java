@@ -11,7 +11,6 @@ public class StringCalculatorTest {
     @Before
     public void setup(){
         sc = new StringCalculator();
-        System.out.println("StringCalculator");
     }
 
     @Test
