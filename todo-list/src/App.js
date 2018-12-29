@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import TodoListTemplate from './components/TodoListTemplate';
 import Form from './components/Form';
 import TodoItemList from './components/TodoItemList';
-import Pagination from './components/Pagination';
+//import Pagination from './components/Pagination';
 
 
 class App extends Component {
 
-    constructor() {
+    /*constructor() {
         super();
 
         // an example array of 150 items to be paged
@@ -25,7 +25,7 @@ class App extends Component {
     onChangePage(pageOfItems) {
         // update state with new page of items
         this.setState({ pageOfItems: pageOfItems });
-    }
+    }*/
 
     id = 3 // 이미 0,1,2 가 존재하므로 3으로 설정
 
@@ -111,7 +111,6 @@ class App extends Component {
                 />
             )}>
                 <TodoItemList todos={todos} onToggle={handleToggle} onRemove={handleRemove}/>
-                <Pagination items={this.state.exampleItems} onChangePage={this.onChangePage} />
             </TodoListTemplate>
         );
     }

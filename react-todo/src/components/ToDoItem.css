@@ -1,0 +1,44 @@
+/*
+.ToDoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ToDoItem-Text {
+    width: 90%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px lightgrey;
+    padding: 12px;
+    margin-right: 10px;
+}
+
+.ToDoItem-Delete {
+    width: 35px;
+    !*padding: 5px;*!
+    height: 35px;
+    cursor: pointer;
+    background: #ff7373;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #c70202;
+    color: white;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.ToDoItem-Delete:hover {
+    box-shadow: none;
+    margin-top: 1px;
+    margin-left: 1px;
+}*/
+
+.todo-text {
+    flex: 1; /* 체크, 엑스를 제외한 공간 다 채우기 */
+    word-break: break-all;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #adb5bd;
+}
