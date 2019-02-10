@@ -57,9 +57,6 @@ class ToDo extends Component {
         this.setState({
             list : nextTodos
         })
-
-        //console.log(selected);
-
     };
 
     // this is now being emitted back to the parent from the child component

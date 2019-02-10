@@ -18,7 +18,6 @@ function Primes(n) {
     return function (m) {
         for (var i = 0, product = 1; i < m; i++) {
             product *= primes[Math.floor(Math.random() * nprimes)]
-
         }
         return product;
     };
